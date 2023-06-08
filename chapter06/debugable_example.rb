@@ -1,3 +1,4 @@
+# debugable_example.rb
 require 'digest'
 
 user = Hash.new
