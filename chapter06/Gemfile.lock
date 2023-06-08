@@ -1,0 +1,12 @@
+GEM
+  specs:
+    debug (1.7.1)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  debug (>= 1.0.0)
+
+BUNDLED WITH
+   2.4.6

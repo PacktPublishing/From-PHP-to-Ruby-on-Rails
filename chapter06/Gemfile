@@ -1,0 +1,2 @@
+# Gemfile
+gem "debug", ">= 1.0.0"
