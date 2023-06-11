@@ -8,6 +8,6 @@ class Person
 end
 
 person = Person.new
-person.first_name = "Barnyard"
-person.last_name = "Pinheiro"
+person.first_name = "Zach"
+person.last_name = "Smith"
 person.full_name
