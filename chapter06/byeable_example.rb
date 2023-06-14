@@ -2,5 +2,7 @@
 require 'byebug'
 
 [1,5,7,9].each do |index|
-  puts "#{index} is #{index ? "NOT":""} larger than 6"
+  not_label = #{index ? "NOT":""}
+  output = "#{index} is #{not_label} larger than 6"
+  puts output
 end
