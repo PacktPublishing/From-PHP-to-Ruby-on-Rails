@@ -1,0 +1,9 @@
+<%= form_with url: "/user", method: :post do |form| %>
+    <%= form.label :password, "Password:" %>
+    <%= form.text_field :password %>
+    <%= form.submit "SEND" %>
+  <% end %>
+
+<% if @password == '1234' %>
+Password is correct
+<% end %>
