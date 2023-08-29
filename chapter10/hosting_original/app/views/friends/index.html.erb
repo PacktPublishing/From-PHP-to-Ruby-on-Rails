@@ -1,0 +1,17 @@
+<table border=1>
+  <tr>
+      <th>FIRST NAME</th>
+      <th>LAST NAME</th>
+      <th>ACTION</th>
+  </tr>
+  <% @friends.each do |friend| %>
+    <tr>
+      <td><%= friend.first_name %></td>
+      <td><%= friend.last_name %></td>
+      <td><a href="/friends/<%= friend.id %>/edit">DETAILS</a></td>
+    </tr>
+  <% end %>
+</table>
+<%= form_with model: @user, url: destroy_user_session_path, method: :delete do |form| %>
+  <%= form.submit "Sign Out" %>
+<% end %>
