@@ -101,10 +101,12 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.13.10-arm64-darwin)
+    nokogiri (1.13.10)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     public_suffix (5.0.3)
-    puma (3.12.6)
+    puma (5.6.7)
+      nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.7)
     rack-test (2.1.0)
@@ -167,8 +169,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.3)
-      mini_portile2 (~> 2.8.0)
+    sqlite3 (1.6.3-arm64-darwin)
+    sqlite3 (1.6.3-x86_64-linux)
     thor (1.2.2)
     thread_safe (0.3.6)
     tilt (2.2.0)
@@ -190,6 +192,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   byebug
@@ -197,7 +200,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  puma (~> 3.7)
+  puma (~> 5.6)
   rails (~> 5.1.7)
   sass-rails (~> 5.0)
   selenium-webdriver
