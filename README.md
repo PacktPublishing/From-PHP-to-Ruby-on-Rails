@@ -37,6 +37,23 @@ With the following software and hardware list you can run all code files present
 | 1-10 | Visual Studio Code or Visual Studio 2022 | Windows, Mac OS X, and Linux (Any) |
 | 1-10 | Ruby | Windows, Mac OS X, and Linux (Any) |
 
+### Errata
+* Page 5, Fourth paragragh: **Another difference between PHP and Ruby is that we do not use any tag to denote PHP code,** _it should say_ **Another difference between PHP and Ruby is that we do not use any tag to denote Ruby code,**
+* Page 102, First code snippet says
+ ```
+class User < Person
+end
+user = User.new
+user = User.new("Amit", "Seth")
+user.full_name
+```
+_it should be_
+```
+class User < Person
+end
+user = User.new("Amit", "Seth")
+user.full_name
+```
 
 ### Related products
 * Layered Design for Ruby on Rails Applications [[Packt]](https://www.packtpub.com/product/layered-design-for-ruby-on-rails-applications/9781801813785) [[Amazon]](https://www.amazon.com/Layered-Design-Ruby-Rails-Applications/dp/1801813787)
